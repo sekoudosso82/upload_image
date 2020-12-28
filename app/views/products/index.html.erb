@@ -5,8 +5,8 @@
       <% @products.each do |p| %>
         <div class="index-tile">
           <%= link_to "More Detail", p %>
-          <h2> Name: <%= p.name %> </h2>
-          <h2> Price: <%= p.price %> </h2>
+          <h2><%= p.name %> </h2>
+          <h2> $ <%= p.price %> </h2>
           <%= image_tag(p.image, class: "index-img") %>
           <%= button_to "Update", edit_product_path(p), method: :get %>
           <%= button_to "Delete", product_path(p), method: :delete %>
