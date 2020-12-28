@@ -1,8 +1,8 @@
 <div>
     <h1>Single Product</h1>
     <h2><%= link_to "Go Back", products_path %></h2>
-    <h2>name: <%= @product.name %></h2>
-    <h2>price: <%= @product.price %></h2>
+    <h2><%= @product.name %></h2>
+    <h2>$ <%= @product.price %></h2>
     <h2> <%= image_tag(@product.image) %></h2>       
 </div>
       
